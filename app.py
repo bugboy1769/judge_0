@@ -9,7 +9,7 @@ from judge_0 import LogicScore, Constraint
 from llm import LlamaWrapper
 import config_manager as cm
 
-st.set_page_config(page_title="Judge-0", layout="wide")
+st.set_page_config(page_title="NeuralJudge", layout="wide")
 
 # --- Load Configuration ---
 config = cm.load_config()
@@ -41,7 +41,7 @@ if selected_model:
         st.sidebar.error(f"Error loading model: {e}")
 
 # --- Main Content ---
-st.title("Judge-0: Neural Evaluation Engine")
+st.title("NeuralJudge: Interpretable LLM Evaluation")
 
 # 1. The Scenario (Fixed Anchor)
 st.subheader("1. The Scenario")
