@@ -55,7 +55,9 @@ $$ Score = \sum (w_i \cdot x_i) $$
 1.  **Forward Pass**: The system calculates a predicted score based on current weights.
 2.  **Loss Calculation**: The user provides a "Ground Truth" score. The system calculates the error (Delta).
 3.  **Backpropagation**: Weights are updated using Gradient Descent.
+
     $$ w_i^{new} = w_i + \alpha \cdot (Score_{target} - Score_{predicted}) \cdot x_i $$
+    
     This ensures credit assignment: only constraints that contributed to the score (active inputs) are updated.
 
 ## Tech Stack
